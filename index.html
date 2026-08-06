@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en" data-language="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0c1018">
+  <meta name="description" content="SpriteForge Capture Studio — 在 Unity  编辑器中把 3D Prefab 转换为 2D 图标、方向精灵、动画序列、Sprite Sheet 与 GIF。">
+  <title>SpriteForge Capture Studio — 3D Prefab to 2D Sprite</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23121824'/%3E%3Cpath d='M16 5 26 11v10L16 27 6 21V11z' fill='none' stroke='%23ff8a3d' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23ffc173'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">
+    <span class="lang-zh">跳到主要内容</span><span class="lang-en">Skip to content</span>
+  </a>
+
+  <header class="site-header" data-header>
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="SpriteForge Capture Studio">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>SpriteForge</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#features"><span class="lang-zh">功能</span><span class="lang-en">Features</span></a>
+        <a href="#gallery"><span class="lang-zh">效果</span><span class="lang-en">Gallery</span></a>
+        <a href="#workflow"><span class="lang-zh">流程</span><span class="lang-en">Workflow</span></a>
+        <a href="#compatibility"><span class="lang-zh">兼容性</span><span class="lang-en">Compatibility</span></a>
+      </nav>
+      <button class="language-toggle" type="button" data-language-toggle aria-label="切换到简体中文">
+        <span aria-hidden="true">中</span><span class="toggle-track"><i></i></span><span aria-hidden="true">EN</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="shell hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="pulse"></span> UNITY  · EDITOR EXTENSION</p>
+          <h1>
+            <span class="lang-zh">把 3D 角色，<br>锻造成 <em>2D 精灵</em></span>
+            <span class="lang-en">Forge 3D characters<br>into <em>2D sprites</em></span>
+          </h1>
+          <p class="hero-lede lang-zh">从 Prefab 到透明图标、方向序列、Sprite Sheet、GIF 与可直接使用的 2D 动画 Prefab。所有捕捉都在隔离预览场景中完成。</p>
+          <p class="hero-lede lang-en">Turn Prefabs into transparent icons, directional sequences, sprite sheets, GIFs, and ready-to-use 2D animation Prefabs—all inside an isolated preview scene.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#gallery">
+              <span class="lang-zh">查看当前预览</span><span class="lang-en">See current preview</span><span aria-hidden="true">↘</span>
+            </a>
+            <a class="button button-quiet" href="indexs.md">
+              <span class="lang-zh">阅读使用手册</span><span class="lang-en">Read documentation</span>
+            </a>
+          </div>
+          <ul class="hero-facts" aria-label="Product highlights">
+            <li><strong>1–32</strong><span class="lang-zh">方向捕捉</span><span class="lang-en">directions</span></li>
+            <li><strong>8192²</strong><span class="lang-zh">最大输出</span><span class="lang-en">max output</span></li>
+            <li><strong>0</strong><span class="lang-zh">运行时代码</span><span class="lang-en">runtime code</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="forge-window">
+            <div class="window-bar">
+              <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+              <span>SpriteForge Export Preview</span>
+              <span class="live-pill"><i></i> EXPORT</span>
+            </div>
+            <div class="preview-stage current-preview-stage checkerboard">
+              <img src="assets/generated/animations/fish001/Attack/D00_000/Attack_D00_000_adaptive.gif" alt="SpriteForge 导出的 fish001 Attack 动画 GIF / fish001 Attack GIF exported by SpriteForge">
+              <span class="preview-label">fish001 · Attack · GIF · 12 FPS</span>
+            </div>
+            <div class="window-status"><span>Alt + LMB · Orbit</span><span>Shift + F · Reset</span><span>PNG · GIF · Sheet</span></div>
+          </div>
+          <span class="float-chip chip-one"><b>PNG</b><small>Alpha</small></span>
+          <span class="float-chip chip-two"><b>GIF</b><small>Preview</small></span>
+          <span class="float-chip chip-three"><b>2D</b><small>Ready</small></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="signal-strip" aria-label="Compatibility summary">
+      <div class="shell signal-track">
+        <span>BUILT-IN</span><i></i><span>URP</span><i></i><span>HDRP</span><i></i><span>PNG</span><i></i><span>JPEG</span><i></i><span>GIF</span><i></i><span>SPRITE SHEET</span><i></i><span>2D PREFAB</span>
+      </div>
+    </section>
+
+    <section class="section features" id="features">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 · CAPTURE TOOLKIT</p>
+            <h2><span class="lang-zh">一套完整的精灵生产线</span><span class="lang-en">A complete sprite production line</span></h2>
+          </div>
+          <p class="lang-zh">预览与导出读取同一组镜头、灯光、构图和动画参数，减少“看起来对，导出来不对”的反复调整。</p>
+          <p class="lang-en">Preview and export share the same camera, lighting, framing, and animation settings—so the final pixels match what you tuned.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card accent-orange">
+            <div class="feature-media checkerboard"><img src="assets/generated/stills/fish001/fish001_D00_000.png" loading="lazy" alt="fish001 0 度完整方向图"></div>
+            <div class="feature-copy"><span class="card-index">01 · FRAME</span><h3><span class="lang-zh">交互式构图</span><span class="lang-en">Interactive framing</span></h3><p class="lang-zh">环绕、旋转对象、平移和缩放都会写回正式设置，导出画面与预览保持一致。</p><p class="lang-en">Orbit, rotate, pan, and zoom directly in preview; every adjustment feeds the final export.</p></div>
+          </article>
+
+          <article class="feature-card accent-blue">
+            <div class="feature-media checkerboard"><img src="assets/generated/stills/fish001/fish001_Directions.png" loading="lazy" alt="SpriteForge 4 方向合成图"></div>
+            <div class="feature-copy"><span class="card-index">02 · DIRECTIONS</span><h3><span class="lang-zh">1–32 个方向</span><span class="lang-en">1–32 directions</span></h3><p class="lang-zh">设定俯仰、偏航和起始角度，一次导出单方向图片与整齐的方向合成图。</p><p class="lang-en">Set pitch, yaw, and start angle, then export individual views and an aligned direction sheet.</p></div>
+          </article>
+
+          <article class="feature-card accent-violet">
+            <div class="feature-media checkerboard"><img src="assets/generated/animations/fish001/Attack/D00_000/Attack_D00_000_adaptive.gif" loading="lazy" alt="SpriteForge 导出的 Attack 循环 GIF"></div>
+            <div class="feature-copy"><span class="card-index">03 · ANIMATION</span><h3><span class="lang-zh">确定性动画采样</span><span class="lang-en">Deterministic animation sampling</span></h3><p class="lang-zh">锁定 AnimationClip 与采样区间，直接生成循环 GIF、序列帧或 Sprite Sheet。</p><p class="lang-en">Lock an AnimationClip and sample range to create looping GIFs, frame sequences, or sprite sheets.</p></div>
+          </article>
+
+          <article class="feature-card accent-mint">
+            <div class="feature-media checkerboard"><img src="assets/generated/stills/fish001/fish001_D01_090.png" loading="lazy" alt="fish001 90 度完整方向图"></div>
+            <div class="feature-copy"><span class="card-index">04 · ASSETS</span><h3><span class="lang-zh">从像素到可用资源</span><span class="lang-en">From pixels to ready assets</span></h3><p class="lang-zh">除图片外，还可生成 2D AnimationClip、控制器、材质与 SpriteRenderer Prefab。</p><p class="lang-en">Go beyond pixels with 2D clips, controllers, materials, and ready-to-use SpriteRenderer Prefabs.</p></div>
+          </article>
+
+          <article class="feature-card accent-gold">
+            <div class="feature-media checkerboard"><img src="assets/generated/stills/fish001/fish001_D02_180.png" loading="lazy" alt="fish001 180 度完整方向图"></div>
+            <div class="feature-copy"><span class="card-index">05 · STYLE</span><h3><span class="lang-zh">风格化输出控制</span><span class="lang-en">Art-directed output</span></h3><p class="lang-zh">三点灯光、透明或渐变背景、阴影、描边、Logo 叠加与 2D Normal Map 都可配置。</p><p class="lang-en">Control lighting, backgrounds, shadows, outlines, logo overlays, and 2D normal maps.</p></div>
+          </article>
+
+          <article class="feature-card accent-sky">
+            <div class="feature-media checkerboard"><img src="assets/generated/stills/fish001/fish001_D03_270.png" loading="lazy" alt="fish001 270 度完整方向图"></div>
+            <div class="feature-copy"><span class="card-index">06 · ISOLATED</span><h3><span class="lang-zh">隔离捕捉与批量导出</span><span class="lang-en">Isolated batch capture</span></h3><p class="lang-zh">在隔离预览场景处理单个或批量 Prefab，不修改源对象、场景和材质。</p><p class="lang-en">Capture one or many Prefabs in isolation without changing source objects, scenes, or materials.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="shell">
+        <div class="section-heading gallery-heading">
+          <div>
+            <p class="eyebrow">02 · REAL PLUGIN EXPORTS</p>
+            <h2><span class="lang-zh">当前 Unity 实际导出</span><span class="lang-en">Actual exports from Unity</span></h2>
+          </div>
+          <p class="lang-zh">以下素材全部由当前 SpriteForge 设置正式导出。所有卡片使用完整画幅显示，点击可查看原始输出。</p>
+          <p class="lang-en">Every asset below was exported with the current SpriteForge settings and is shown uncropped. Open any card to inspect the original output.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <button class="gallery-card" type="button" data-gallery-item data-image="assets/generated/animations/fish001/Attack/D00_000/Attack_D00_000_adaptive.gif" data-title-zh="Attack 动画 GIF" data-title-en="Attack animation GIF" data-desc-zh="使用当前 fish001、Attack 动画与 SpriteForge 镜头设置，以 512×512、12 FPS 导出的循环 GIF。" data-desc-en="A 512×512 looping GIF exported at 12 FPS with the current fish001, Attack clip, and SpriteForge camera settings."><span class="gallery-media checkerboard"><img src="assets/generated/animations/fish001/Attack/D00_000/Attack_D00_000_adaptive.gif" loading="lazy" alt="Attack 动画 GIF"></span><span class="gallery-caption"><b><span class="lang-zh">Attack 动画 GIF</span><span class="lang-en">Attack animation GIF</span></b><small>512 × 512 · 12 FPS · LOOP</small></span><span class="zoom-mark" aria-hidden="true">↗</span></button>
+
+          <button class="gallery-card" type="button" data-gallery-item data-image="assets/generated/stills/fish001/fish001_Directions.png" data-title-zh="四方向合成图" data-title-en="Four-direction sheet" data-desc-zh="0°、90°、180°、270° 四个完整画幅由插件自动排成 2×2 合成图，单元之间保留 16 像素间距。" data-desc-en="Four uncropped views at 0°, 90°, 180°, and 270°, arranged by the plugin as a 2×2 sheet with 16-pixel spacing."><span class="gallery-media checkerboard"><img src="assets/generated/stills/fish001/fish001_Directions.png" loading="lazy" alt="fish001 四方向合成图"></span><span class="gallery-caption"><b><span class="lang-zh">四方向合成图</span><span class="lang-en">Four-direction sheet</span></b><small>2 × 2 · 0° / 90° / 180° / 270°</small></span><span class="zoom-mark" aria-hidden="true">↗</span></button>
+
+          <button class="gallery-card gallery-card-small" type="button" data-gallery-item data-image="assets/generated/stills/fish001/fish001_D00_000.png" data-title-zh="方向 01 · 0°" data-title-en="Direction 01 · 0°" data-desc-zh="插件导出的 512×512 原始 PNG，保留完整透明画幅。" data-desc-en="The original 512×512 PNG exported by the plugin, with the full transparent canvas preserved."><span class="gallery-media checkerboard"><img src="assets/generated/stills/fish001/fish001_D00_000.png" loading="lazy" alt="fish001 0 度方向图"></span><span class="gallery-caption"><b><span class="lang-zh">方向 01</span><span class="lang-en">Direction 01</span></b><small>0° · PNG · ALPHA</small></span><span class="zoom-mark" aria-hidden="true">↗</span></button>
+
+          <button class="gallery-card gallery-card-small" type="button" data-gallery-item data-image="assets/generated/stills/fish001/fish001_D01_090.png" data-title-zh="方向 02 · 90°" data-title-en="Direction 02 · 90°" data-desc-zh="插件导出的 512×512 原始 PNG，页面未做裁剪或放大填充。" data-desc-en="The original 512×512 PNG exported by the plugin, displayed without cropping or cover scaling."><span class="gallery-media checkerboard"><img src="assets/generated/stills/fish001/fish001_D01_090.png" loading="lazy" alt="fish001 90 度方向图"></span><span class="gallery-caption"><b><span class="lang-zh">方向 02</span><span class="lang-en">Direction 02</span></b><small>90° · PNG · ALPHA</small></span><span class="zoom-mark" aria-hidden="true">↗</span></button>
+
+          <button class="gallery-card gallery-card-small" type="button" data-gallery-item data-image="assets/generated/stills/fish001/fish001_D02_180.png" data-title-zh="方向 03 · 180°" data-title-en="Direction 03 · 180°" data-desc-zh="插件导出的 512×512 原始 PNG，与其他方向共享同一镜头和构图边界。" data-desc-en="The original 512×512 PNG, sharing the same camera and framing bounds as every other direction."><span class="gallery-media checkerboard"><img src="assets/generated/stills/fish001/fish001_D02_180.png" loading="lazy" alt="fish001 180 度方向图"></span><span class="gallery-caption"><b><span class="lang-zh">方向 03</span><span class="lang-en">Direction 03</span></b><small>180° · PNG · ALPHA</small></span><span class="zoom-mark" aria-hidden="true">↗</span></button>
+
+          <button class="gallery-card gallery-card-small" type="button" data-gallery-item data-image="assets/generated/stills/fish001/fish001_D03_270.png" data-title-zh="方向 04 · 270°" data-title-en="Direction 04 · 270°" data-desc-zh="插件导出的 512×512 原始 PNG；透明边界完整保留，便于比较四个方向的统一构图。" data-desc-en="The original 512×512 PNG with its transparent canvas intact for consistent four-direction comparison."><span class="gallery-media checkerboard"><img src="assets/generated/stills/fish001/fish001_D03_270.png" loading="lazy" alt="fish001 270 度方向图"></span><span class="gallery-caption"><b><span class="lang-zh">方向 04</span><span class="lang-en">Direction 04</span></b><small>270° · PNG · ALPHA</small></span><span class="zoom-mark" aria-hidden="true">↗</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section workflow" id="workflow">
+      <div class="shell workflow-layout">
+        <div class="workflow-copy">
+          <p class="eyebrow">03 · ONE EDITOR WORKFLOW</p>
+          <h2><span class="lang-zh">三步得到可交付资源</span><span class="lang-en">Three steps to production-ready assets</span></h2>
+          <p class="lang-zh">无需搭建临时场景、录屏或手工切图。SpriteForge 使用隔离副本完成捕捉，并保持源 Prefab、场景对象与材质不变。</p>
+          <p class="lang-en">No temporary scene setup, screen recording, or manual slicing. SpriteForge captures an isolated clone while leaving source Prefabs, scene objects, and materials untouched.</p>
+          <a class="text-link" href="indexs.md"><span class="lang-zh">打开完整使用手册</span><span class="lang-en">Open the full manual</span><span>→</span></a>
+        </div>
+        <ol class="workflow-steps">
+          <li><span>01</span><div><h3><span class="lang-zh">选择</span><span class="lang-en">Select</span></h3><p class="lang-zh">拖入 Prefab，选择单张或准确锁定的 AnimationClip。</p><p class="lang-en">Drop in a Prefab and choose a still or an exactly locked AnimationClip.</p></div></li>
+          <li><span>02</span><div><h3><span class="lang-zh">调整</span><span class="lang-en">Tune</span></h3><p class="lang-zh">在实时预览中调整镜头、方向、灯光、背景、阴影和构图。</p><p class="lang-en">Tune camera, directions, lighting, background, shadows, and framing in live preview.</p></div></li>
+          <li><span>03</span><div><h3><span class="lang-zh">导出</span><span class="lang-en">Export</span></h3><p class="lang-zh">一次生成图片、图集、GIF、元数据和可直接使用的 2D 资源。</p><p class="lang-en">Generate images, sheets, GIFs, metadata, and ready-to-use 2D assets in one pass.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section compatibility" id="compatibility">
+      <div class="shell compatibility-panel">
+        <div>
+          <p class="eyebrow">04 · COMPATIBILITY</p>
+          <h2><span class="lang-zh">专为 Unity  编辑器工作流</span><span class="lang-en">Built for Unity  editor workflows</span></h2>
+        </div>
+        <dl class="spec-grid">
+          <div><dt>UNITY</dt><dd>2022 ~ 6000.0+</dd></div>
+          <div><dt>PIPELINES</dt><dd>Built-in · URP · HDRP</dd></div>
+          <div><dt>PACKAGE</dt><dd>Editor only</dd></div>
+          <div><dt>DEPENDENCY</dt><dd>Unity 2D Sprite</dd></div>
+          <div><dt>OUTPUT</dt><dd>PNG · JPEG · GIF · JSON</dd></div>
+          <div><dt>LANGUAGE</dt><dd>简体中文 · English</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section license-section" id="license">
+      <div class="shell license-panel">
+        <span class="license-mark" aria-hidden="true">§</span>
+        <div>
+          <p class="eyebrow">UNITY ASSET STORE LICENSE</p>
+          <h2><span class="lang-zh">使用 Unity 标准 Asset Store EULA</span><span class="lang-en">Licensed under the standard Asset Store EULA</span></h2>
+          <p class="lang-zh">SpriteForge Capture Studio 通过 Unity Asset Store 获取时，按 Unity 标准最终用户许可协议授权。本产品不采用额外的非标准 EULA。</p>
+          <p class="lang-en">When acquired through the Unity Asset Store, SpriteForge Capture Studio is licensed under Unity's standard End User License Agreement. No additional non-standard EULA applies.</p>
+        </div>
+        <div class="license-actions">
+          <a class="button button-primary" href="LICENSES.md"><span class="lang-zh">查看许可说明</span><span class="lang-en">License notice</span></a>
+          <a class="button button-quiet" href="https://unity.com/legal/as-terms" rel="noreferrer"><span class="lang-zh">Unity 官方 EULA</span><span class="lang-en">Official Unity EULA</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>SpriteForge</span></a><p>Capture Studio · © 2026</p></div>
+      <p class="footer-note lang-zh">独立个人开发者产品。Unity 是 Unity Technologies 的商标；本产品不隶属于 Unity，也未获得 Unity 背书。</p>
+      <p class="footer-note lang-en">An independent developer product. Unity is a trademark of Unity Technologies; this product is not affiliated with or endorsed by Unity.</p>
+      <div class="footer-links"><a href="indexs.md"><span class="lang-zh">文档</span><span class="lang-en">Docs</span></a><a href="LICENSES.md"><span class="lang-zh">许可</span><span class="lang-en">License</span></a></div>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" data-lightbox aria-labelledby="lightbox-title">
+    <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close">×</button>
+    <div class="lightbox-media checkerboard"><img data-lightbox-image alt=""></div>
+    <div class="lightbox-copy"><p class="eyebrow">SPRITEFORGE EXPORT</p><h2 id="lightbox-title" data-lightbox-title></h2><p data-lightbox-description></p></div>
+  </dialog>
+
+  <noscript><p class="noscript">This page works without JavaScript. Enable JavaScript only for language switching and the enlarged image viewer.</p></noscript>
+</body>
+</html>
